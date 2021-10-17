@@ -13,8 +13,8 @@ services:
     working_dir: /opt/app
     depends_on:
       - mongo
-    networks:
-    - springappnetwork  
+    #networks:
+    #- springappnetwork  
     deploy:  # This will be considered only in docker swarm.
       replicas: 2
       update_config:
